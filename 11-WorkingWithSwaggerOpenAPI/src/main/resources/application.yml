@@ -1,0 +1,22 @@
+spring:
+ application:
+  name: rest-with-spring-boot-and-java
+ datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/rest_with_spring_boot?useTimezone=true&serverTimezone=UTC
+  username: Developer
+  password: 123
+ jpa:
+  hibernate:
+   ddl-auto: none	
+  properties:
+   hibernate:
+   show-sql: false
+logging:
+ level:
+  # root: INFO
+  com.github.MathCunha16: DEBUG
+spring-doc:
+ paths-to-match: /api/**/v1/**
+ swagger-ui:
+  use-root-path: true  
