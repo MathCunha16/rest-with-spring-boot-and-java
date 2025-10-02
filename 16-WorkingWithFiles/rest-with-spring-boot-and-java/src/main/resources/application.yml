@@ -1,0 +1,34 @@
+cors:
+  originPatterns: http://localhost:8080,http://localhost:3000,https://www.erudio.com.br
+file:
+  upload-dir: /home/cunha/Upload-dir-Spring
+spring:
+ application:
+  name: rest-with-spring-boot-and-java
+ datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/rest_with_spring_boot?useTimezone=true&serverTimezone=UTC
+  username: root
+  password: Developer123
+  # flyway:
+    # repair: true
+ jpa:
+  hibernate:
+   ddl-auto: none	
+  properties:
+   hibernate:
+   show-sql: false
+ servlet:
+   multipart:
+     enabled: true
+     file-size-threshold: 2KB
+     max-file-size: 200MB
+     max-request-size: 215MB
+logging:
+ level:
+  # root: INFO
+  com.github.MathCunha16: DEBUG
+spring-doc:
+ paths-to-match: /api/**/v1/**
+ swagger-ui:
+  use-root-path: true  

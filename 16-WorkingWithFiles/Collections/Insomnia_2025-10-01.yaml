@@ -1,0 +1,565 @@
+type: collection.insomnia.rest/5.0
+name: OpenAPI definition
+meta:
+  id: wrk_395c1697a48744198501d56eb9582798
+  created: 1759347131231
+  modified: 1759347131231
+  description: ""
+collection:
+  - name: RestController Spring
+    meta:
+      id: fld_a968e02448e94e0fb02ce4f2c235ce62
+      created: 1759347131235
+      modified: 1759347875929
+      sortKey: -1759347127281
+      description: ""
+    children:
+      - name: api
+        meta:
+          id: fld_46d4d782d1f34f53a05e73691ef1587f
+          created: 1759347131237
+          modified: 1759347909445
+          sortKey: -1759347127280
+          description: ""
+        children:
+          - name: person
+            meta:
+              id: fld_6b567b295b504863a2bca5f834d1adbd
+              created: 1759347131239
+              modified: 1759347131239
+              sortKey: -1759347127279
+              description: ""
+            children:
+              - name: v1
+                meta:
+                  id: fld_c69a014c84ea4624af099bef6e51565d
+                  created: 1759347131241
+                  modified: 1759347131241
+                  sortKey: -1759347127278
+                  description: ""
+                children:
+                  - url: "{{baseUrl}}/api/person/v1"
+                    name: Find All People
+                    meta:
+                      id: req_9b5b63c38a90409b96809cb123c11f68
+                      created: 1759347131250
+                      modified: 1759347131250
+                      isPrivate: false
+                      description: Finds All People
+                      sortKey: -1759347127274
+                    method: GET
+                    headers:
+                      - name: Accept
+                        value: application/json
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: "{{baseUrl}}/api/person/v1"
+                    name: Updates a person's information
+                    meta:
+                      id: req_4d6594f2946046339d57413bf88a50e2
+                      created: 1759347131251
+                      modified: 1759347131251
+                      isPrivate: false
+                      description: Updates a person's information by passing in a JSON, XML or YML
+                        representation of the updated person.
+                      sortKey: -1759347127273
+                    method: PUT
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                          "id": -95005298,
+                          "firstName": "exercitation",
+                          "lastName": "pariatur in labore",
+                          "address": "Excepteur non",
+                          "gender": "dolore",
+                          "_links": {
+                            "qui02": {
+                              "href": "sed dolore ulla",
+                              "hreflang": "in sed et",
+                              "title": "pariatur fugiat magna",
+                              "type": "quis pariatur velit et",
+                              "deprecation": "Duis aliquip exercitation",
+                              "profile": "deserunt aliquip Duis",
+                              "name": "mollit ullamco dolor",
+                              "templated": false
+                            }
+                          }
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                      - name: Accept
+                        value: application/json
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: "{{baseUrl}}/api/person/v1"
+                    name: Adds a new Person
+                    meta:
+                      id: req_63563c1b9e1c403caf8cc6d53c2b06c3
+                      created: 1759347131253
+                      modified: 1759347131253
+                      isPrivate: false
+                      description: Adds a new person by passing in a JSON, XML or YML representation
+                        of the person.
+                      sortKey: -1759347127272
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                          "id": -95005298,
+                          "firstName": "exercitation",
+                          "lastName": "pariatur in labore",
+                          "address": "Excepteur non",
+                          "gender": "dolore",
+                          "_links": {
+                            "qui02": {
+                              "href": "sed dolore ulla",
+                              "hreflang": "in sed et",
+                              "title": "pariatur fugiat magna",
+                              "type": "quis pariatur velit et",
+                              "deprecation": "Duis aliquip exercitation",
+                              "profile": "deserunt aliquip Duis",
+                              "name": "mollit ullamco dolor",
+                              "templated": false
+                            }
+                          }
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                      - name: Accept
+                        value: application/json
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - name: "{id}"
+                    meta:
+                      id: fld_321424d7f1c24dce8ef0ed7a018c39e6
+                      created: 1759347131242
+                      modified: 1759347131242
+                      sortKey: -1759347127277
+                      description: ""
+                    children:
+                      - url: "{{baseUrl}}/api/person/v1/:id"
+                        name: Finds a Person
+                        meta:
+                          id: req_9fd7d5839ed74b60a72e2fcd7c9d7a91
+                          created: 1759347131244
+                          modified: 1759347131244
+                          isPrivate: false
+                          description: Find a specific person by your ID
+                          sortKey: -1759347127276
+                        method: GET
+                        headers:
+                          - name: Accept
+                            value: application/json
+                        settings:
+                          renderRequestBody: true
+                          encodeUrl: true
+                          followRedirects: global
+                          cookies:
+                            send: true
+                            store: true
+                          rebuildPath: true
+                        pathParameters:
+                          - name: id
+                            value: "-87622039"
+                      - url: "{{baseUrl}}/api/person/v1/:id"
+                        name: Deletes a Person
+                        meta:
+                          id: req_68d077f982774cc290e47951e92b7b00
+                          created: 1759347131247
+                          modified: 1759347131247
+                          isPrivate: false
+                          description: Deletes a specific person by their ID
+                          sortKey: -1759347127275
+                        method: DELETE
+                        settings:
+                          renderRequestBody: true
+                          encodeUrl: true
+                          followRedirects: global
+                          cookies:
+                            send: true
+                            store: true
+                          rebuildPath: true
+                        pathParameters:
+                          - name: id
+                            value: "-87622039"
+          - name: book
+            meta:
+              id: fld_3aba198411e04c1f92a1d4cdd7d41388
+              created: 1759347131255
+              modified: 1759347131255
+              sortKey: -1759347127271
+              description: ""
+            children:
+              - name: v1
+                meta:
+                  id: fld_737500c95afc49b0a4a93b1de61723c7
+                  created: 1759347131256
+                  modified: 1759347131256
+                  sortKey: -1759347127270
+                  description: ""
+                children:
+                  - url: "{{baseUrl}}/api/book/v1"
+                    name: Find All Books
+                    meta:
+                      id: req_9e46b231b04c4e66a2f76eb0957eb53a
+                      created: 1759347131263
+                      modified: 1759347131263
+                      isPrivate: false
+                      description: Finds All Books
+                      sortKey: -1759347127266
+                    method: GET
+                    headers:
+                      - name: Accept
+                        value: application/json
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: "{{baseUrl}}/api/book/v1"
+                    name: Updates a book's information
+                    meta:
+                      id: req_3fab510c488e4f92a6ba0f8d4e9f5850
+                      created: 1759347131265
+                      modified: 1759347131265
+                      isPrivate: false
+                      description: Updates a book's information by passing in a JSON, XML or YML
+                        representation of the updated book.
+                      sortKey: -1759347127265
+                    method: PUT
+                    body:
+                      mimeType: application/json
+                      text: >-
+                        {
+                          "id": -13296786,
+                          "author": "officia quis",
+                          "launchDate": "1965-08-17T15:00:19.498Z",
+                          "price": 33340884.48440054,
+                          "title": "Lo",
+                          "_links": {
+                            "consequatc": {
+                              "href": "pariatur",
+                              "hreflang": "officia anim do",
+                              "title": "qui",
+                              "type": "et id",
+                              "deprecation": "esse do aliquip Excepteur ullamco",
+                              "profile": "id in esse deserunt",
+                              "name": "Excepteu",
+                              "templated": true
+                            }
+                          }
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                      - name: Accept
+                        value: application/json
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: "{{baseUrl}}/api/book/v1"
+                    name: Adds a new Book
+                    meta:
+                      id: req_4d754388c6d84f518fa9a68634813130
+                      created: 1759347131266
+                      modified: 1759347131266
+                      isPrivate: false
+                      description: Adds a new book by passing in a JSON, XML or YML representation of
+                        the book.
+                      sortKey: -1759347127264
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: >-
+                        {
+                          "id": -13296786,
+                          "author": "officia quis",
+                          "launchDate": "1965-08-17T15:00:19.498Z",
+                          "price": 33340884.48440054,
+                          "title": "Lo",
+                          "_links": {
+                            "consequatc": {
+                              "href": "pariatur",
+                              "hreflang": "officia anim do",
+                              "title": "qui",
+                              "type": "et id",
+                              "deprecation": "esse do aliquip Excepteur ullamco",
+                              "profile": "id in esse deserunt",
+                              "name": "Excepteu",
+                              "templated": true
+                            }
+                          }
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                      - name: Accept
+                        value: application/json
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - name: "{id}"
+                    meta:
+                      id: fld_6810830a93cd46c9918d7d2a89b76867
+                      created: 1759347131258
+                      modified: 1759347131258
+                      sortKey: -1759347127269
+                      description: ""
+                    children:
+                      - url: "{{baseUrl}}/api/book/v1/:id"
+                        name: Finds a Book
+                        meta:
+                          id: req_cbaad9ce295649679e795e2394007f76
+                          created: 1759347131260
+                          modified: 1759347131260
+                          isPrivate: false
+                          description: Find a specific book by your ID
+                          sortKey: -1759347127268
+                        method: GET
+                        headers:
+                          - name: Accept
+                            value: application/json
+                        settings:
+                          renderRequestBody: true
+                          encodeUrl: true
+                          followRedirects: global
+                          cookies:
+                            send: true
+                            store: true
+                          rebuildPath: true
+                        pathParameters:
+                          - name: id
+                            value: "-84625633"
+                      - url: "{{baseUrl}}/api/book/v1/:id"
+                        name: Deletes a Book
+                        meta:
+                          id: req_a0d3388f27fc41a48f09f439eeeace7a
+                          created: 1759347131261
+                          modified: 1759347131261
+                          isPrivate: false
+                          description: Deletes a specific book by their ID
+                          sortKey: -1759347127267
+                        method: DELETE
+                        settings:
+                          renderRequestBody: true
+                          encodeUrl: true
+                          followRedirects: global
+                          cookies:
+                            send: true
+                            store: true
+                          rebuildPath: true
+                        pathParameters:
+                          - name: id
+                            value: "-84625633"
+          - name: test
+            meta:
+              id: fld_68e01813f34d4dcbaae816911fdf2bd8
+              created: 1759347131268
+              modified: 1759347157219
+              sortKey: -1759347127263
+              description: ""
+            children:
+              - name: v1
+                meta:
+                  id: fld_8645b881c41c4da9bb57d7b3f96e03be
+                  created: 1759347131270
+                  modified: 1759347131270
+                  sortKey: -1759347127262
+                  description: ""
+                children:
+                  - name: test
+                    meta:
+                      id: fld_2a2e3805dcb74432a9196c79899465ea
+                      created: 1759347131272
+                      modified: 1759347131272
+                      sortKey: -1759347127261
+                      description: ""
+                    children:
+                      - url: "{{baseUrl}}/api/test/v1/test"
+                        name: testlog
+                        meta:
+                          id: req_bc27cf2b110545e8a304d6fc828b79ce
+                          created: 1759347131273
+                          modified: 1759347131273
+                          isPrivate: false
+                          description: ""
+                          sortKey: -1759347127260
+                        method: GET
+                        headers:
+                          - name: Accept
+                            value: "*/*"
+                        settings:
+                          renderRequestBody: true
+                          encodeUrl: true
+                          followRedirects: global
+                          cookies:
+                            send: true
+                            store: true
+                          rebuildPath: true
+          - name: File
+            meta:
+              id: fld_5fb47101bd4d4741b479efe915ad5980
+              created: 1759347921993
+              modified: 1759347943450
+              sortKey: -1759347921993
+              description: ""
+            children:
+              - name: v1
+                meta:
+                  id: fld_fb67a62216044a1286e27c77587b4de0
+                  created: 1759347938000
+                  modified: 1759372734800
+                  sortKey: -1759347938000
+                  description: ""
+                children:
+                  - url: http://localhost:8080/api/file/v1/uploadFile
+                    name: Uploads a File
+                    meta:
+                      id: req_a83c8e24fb9e40159e407383c288aac9
+                      created: 1759347948565
+                      modified: 1759372773913
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1759347948565
+                    method: POST
+                    body:
+                      mimeType: multipart/form-data
+                      params:
+                        - id: pair_83febbc7b6194bd59fc4782981192533
+                          name: file
+                          value: ""
+                          description: ""
+                          disabled: false
+                          type: file
+                          fileName: /home/cunha/Imagens/jesus.jpg
+                    headers:
+                      - name: Content-Type
+                        value: multipart/form-data
+                      - name: User-Agent
+                        value: insomnia/11.6.1
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: http://localhost:8080/api/file/v1/uploadMultiPartFiles
+                    name: Upload Multiple Files
+                    meta:
+                      id: req_cac38af438004dfcb5be171ce64c4568
+                      created: 1759371091821
+                      modified: 1759371420995
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1759347537920.5
+                    method: POST
+                    body:
+                      mimeType: multipart/form-data
+                      params:
+                        - id: pair_83febbc7b6194bd59fc4782981192533
+                          name: files
+                          value: ""
+                          description: ""
+                          disabled: false
+                          type: file
+                          fileName: /home/cunha/Imagens/eu_moedas.jpeg
+                        - id: pair_67c47264bbf549cebc996825c85a8eaf
+                          name: files
+                          value: ""
+                          description: ""
+                          disabled: false
+                          type: file
+                          fileName: /home/cunha/Downloads/Allahu Akbar Sound Effect.mp3
+                        - id: pair_ed5bc0e4b36241cd84b0a4ac90dc2875
+                          name: files
+                          value: ""
+                          description: ""
+                          disabled: false
+                          type: file
+                          fileName: /home/cunha/Imagens/img2.png
+                    headers:
+                      - name: Content-Type
+                        value: multipart/form-data
+                      - name: User-Agent
+                        value: insomnia/11.6.1
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: http://localhost:8080/api/file/v1/downloadFile/jesus_1759370635991.jpg
+                    name: Download a File
+                    meta:
+                      id: req_4b5f87fb1bed4d5c8737739da0e59249
+                      created: 1759372718884
+                      modified: 1759372813163
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1759347537820.5
+                    method: GET
+                    headers:
+                      - name: User-Agent
+                        value: insomnia/11.6.1
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+    environment:
+      baseUrl: http://localhost:8080
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_ae7b5a92b802e74b8df46b41e5d685c2fcea7389
+    created: 1759347131286
+    modified: 1759347131286
+environments:
+  name: Base Environment
+  meta:
+    id: env_ae7b5a92b802e74b8df46b41e5d685c2fcea7389
+    created: 1759347131277
+    modified: 1759347131277
+    isPrivate: false
